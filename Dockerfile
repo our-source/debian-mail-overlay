@@ -64,7 +64,7 @@ RUN NB_CORES=${BUILD_CORES-$(getconf _NPROCESSORS_CONF)} \
  && if [ "${CHECKSUM}" != "${SKALIBS_SHA256_HASH}" ]; then echo "${SKALIBS_TARBALL} : bad checksum" && exit 1; fi \
  && tar xzf ${SKALIBS_TARBALL} && cd skalibs-${SKALIBS_VER} \
  && ./configure --prefix=/usr --datadir=/etc \
- && make && make install \
+ && make -j${NB_CORES} && make install \
  && cd /tmp \
  && EXECLINE_TARBALL="execline-${EXECLINE_VER}.tar.gz" \
  && wget -q https://skarnet.org/software/execline/${EXECLINE_TARBALL} \
@@ -72,7 +72,7 @@ RUN NB_CORES=${BUILD_CORES-$(getconf _NPROCESSORS_CONF)} \
  && if [ "${CHECKSUM}" != "${EXECLINE_SHA256_HASH}" ]; then echo "${EXECLINE_TARBALL} : bad checksum" && exit 1; fi \
  && tar xzf ${EXECLINE_TARBALL} && cd execline-${EXECLINE_VER} \
  && ./configure --prefix=/usr \
- && make && make install \
+ && make -j${NB_CORES} && make install \
  && cd /tmp \
  && S6_TARBALL="s6-${S6_VER}.tar.gz" \
  && wget -q https://skarnet.org/software/s6/${S6_TARBALL} \
@@ -80,7 +80,7 @@ RUN NB_CORES=${BUILD_CORES-$(getconf _NPROCESSORS_CONF)} \
  && if [ "${CHECKSUM}" != "${S6_SHA256_HASH}" ]; then echo "${S6_TARBALL} : bad checksum" && exit 1; fi \
  && tar xzf ${S6_TARBALL} && cd s6-${S6_VER} \
  && ./configure --prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin \
- && make && make install \
+ && make -j${NB_CORES} && make install \
  && cd /tmp \
  && RSPAMD_TARBALL="${RSPAMD_VER}.tar.gz" \
  && wget -q https://github.com/vstakhov/rspamd/archive/${RSPAMD_TARBALL} \
