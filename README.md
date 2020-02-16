@@ -1,3 +1,11 @@
+### Build
+
+[![](https://travis-ci.org/our-source/debian-mail-overlay.svg?branch=master)](https://travis-ci.org/our-source/debian-mail-overlay) [![](https://images.microbadger.com/badges/version/oursource/debian-mail-overlay:latest.svg)](https://microbadger.com/images/oursource/debian-mail-overlay:latest)
+
+### Docker image
+
+[![](https://images.microbadger.com/badges/image/oursource/debian-mail-overlay:latest.svg)](https://microbadger.com/images/oursource/debian-mail-overlay:latest) [![](https://img.shields.io/docker/automated/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/builds/) [![](https://img.shields.io/docker/pulls/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/) [![](https://img.shields.io/docker/stars/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/) [![](https://img.shields.io/badge/bitcoin-donate-green.svg)](https://keybase.io/oursource)
+
 ## our-source/debian-mail-overlay
 
 This overlay base image contains Debian 10 "Buster" slim (remove some extra files that are normally not necessary within containers, such as man pages and documentation), compile skarnet.org's small & secure supervision software suite (skalibs, execline, s6) and build Rspamd, the fast, free and open-source spam filtering system.
