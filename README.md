@@ -4,7 +4,7 @@
 
 ### Docker image
 
-[![](https://images.microbadger.com/badges/image/oursource/debian-mail-overlay:latest.svg)](https://microbadger.com/images/oursource/debian-mail-overlay:latest) [![](https://img.shields.io/docker/automated/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/builds/) [![](https://img.shields.io/docker/pulls/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/) [![](https://img.shields.io/docker/stars/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/) [![](https://img.shields.io/badge/bitcoin-donate-green.svg)](https://keybase.io/oursource)
+[![](https://images.microbadger.com/badges/image/oursource/debian-mail-overlay:latest.svg)](https://microbadger.com/images/oursource/debian-mail-overlay:latest) [![](https://img.shields.io/docker/automated/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/builds/) [![](https://img.shields.io/docker/pulls/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/) [![](https://img.shields.io/docker/stars/oursource/debian-mail-overlay.svg)](https://hub.docker.com/r/oursource/debian-mail-overlay/)
 
 ## our-source/debian-mail-overlay
 
