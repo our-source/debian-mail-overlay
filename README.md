@@ -8,6 +8,6 @@ Software built from source :
 * Execline 2.5.3.0 : https://skarnet.org/software/execline/
 * s6 2.8.0.1 : https://skarnet.org/software/s6/
 * Rspamd 1.9.4 : https://rspamd.com/
-* Gucci 0.1.0 : https://github.com/noqcks/gucci/
+* Gucci 1.2.2 : https://github.com/noqcks/gucci/
 
 Please see the [main repository](https://github.com/hardware/mailserver) for instructions.
